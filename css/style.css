@@ -1,0 +1,420 @@
+/* general style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+section{
+    padding: 50px 0;
+}
+a{
+    text-decoration: none;
+}
+i{
+    color: #14647b;
+}
+ul li{
+    list-style: none;
+}
+/* .......................Top-HEADER..................................... */
+.top-header{
+    background-color: #14647b;
+    /* height: 32px; */
+}
+.top-header ul{
+    padding-left: 0!important;
+    margin-top: 7px!important;
+    margin-bottom: 7px!important;
+}
+.top-header ul li{
+    display:inline-block; 
+}
+.top-links ul li a{
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.top-links ul li{
+    padding: 3px 8px; 
+  position:relative;
+}
+.top-links ul li:not(:last-child)::after{
+    content:""; 
+    border:1px dotted #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-3px; 
+    top:0px; 
+    height:100%;
+  }
+  /* .....................navbar....................... */
+  .navbar_wrapper .navbar .nav-item .nav-link{
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    color: gray;
+    display: inline-block;
+    
+}
+.navbar_wrapper .navbar-nav .nav-item .nav-link{
+margin-left: 1rem;
+}
+.navbar_wrapper .navbar .nav-item .nav-link::after{
+    position:absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 3px;
+    background: #14647b;
+    transition: 0.3s;
+   
+}
+.navbar_wrapper .navbar .nav-item .nav-link.active:after,
+.navbar_wrapper .navbar .nav-item .nav-link:hover:after{
+width: 100%;
+}
+.navbar_wrapper .navbar .nav-item .nav-link.active,
+.navbar_wrapper .navbar .nav-item .nav-link:hover{
+    color: #ff4e01;
+}
+/*........................... banner............................. */
+.banner-wrapper{
+    width:100%;
+    min-height: 480px;
+    /* height: auto; */
+   background-image: url(../images/hero-image.png);
+   background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+background-attachment: fixed;
+}
+.banner-wrapper h1{
+padding-top: 80px;
+/* padding-top: -23px; */
+font-size: 61px;
+line-height: 70px;
+color: #ffffff;
+font-weight: 300;
+text-shadow: 1px 2px gray;
+}
+/* ...............................main-section........................................... */
+.mainsec-wrapper h4{
+font-size: 26px;
+font-weight:300;
+}
+.mainsec-wrapper .card{
+width: 100%;
+position: relative;
+cursor: pointer;
+}
+.logos{
+    position: absolute;
+    top: -40px;
+    left: 30px;
+background-color: #14647b;
+   border-radius: 50%;
+   border: 10px solid #ffffff;
+   width: 82px;
+   height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+.mainsec-wrapper .card:hover .logos{
+background-color: #ff4e01;
+}
+.mainsec-wrapper .card:hover .card-title{
+    color: #ff4e01;
+}
+.mainsec-wrapper .card:hover .card-body i{
+    color: #ff4e01;
+}
+.logos i{
+    color: #ffffff;
+    font-size: 32px;
+    }
+    .mainsec-wrapper .card .card-body i{
+        font-size: 37px;
+    }
+    .mainsec-wrapper .card .card-title {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 27px;
+    }
+    .mainsec-wrapper .card {
+border-radius: 10px;
+    }
+    .mainsec-wrapper .card .card-text{
+        font-size: 15px;
+        line-height: 19px;
+        font-weight: 400;
+    }
+    /* ....................................Portfolio............................................ */
+    .portfolio-wrapper h2{
+        font-size: 56px;
+        line-height: 57px;
+        font-weight: 200;
+    }
+    .portfolio-wrapper p{
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 300;
+    }
+    
+    .portfolio-wrapper .bkround{
+        background-color: #eeeeee;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    
+    
+    .portfolio-wrapper .bkround .box{
+       transition: all 0.2s ease;
+        cursor: pointer;
+       }
+       .portfolio-wrapper .bkround .box .image-box{
+           position: relative;
+           overflow: hidden;
+           /* width: 100%; */
+       }
+       .portfolio-wrapper .bkround .box .image-box1{
+    height: 265px;
+    background: url(../images/img4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+       }
+       .portfolio-wrapper .bkround .box .image-box2{
+        height: 265px;
+    background: url(../images/img5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+       }
+
+    .portfolio-wrapper .bkround .box .image-box3{
+        height: 265px;
+        background: url(../images/img6.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+               }
+  
+               .portfolio-wrapper .bkround .box .foreground{
+                position: absolute;
+              
+               width: 100%;
+               height: 100%;
+              background-color:rgba(20, 100, 123, 0.7);
+              /* background-color: unset; */
+              transition: all 0.2s ease;
+              opacity: 0;
+            
+              }
+       .portfolio-wrapper .bkround .box:hover .foreground{
+      opacity: 1;
+       }
+      
+    .portfolio-wrapper .bkround .foreground .search-icon{
+        border: 1px solid rgb(187, 183, 183);
+        padding: 9px 12px;
+        display: inline-block;
+        /* display: none; */
+        transition: all 0.2s ease;
+    }
+    .portfolio-wrapper .bkround .box-icon{
+        /* margin-top: 8px; */
+        padding:5px 14px 0px 14px;
+       
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 5px;
+        background-color: #ffffff;
+    }
+    .portfolio-wrapper .bkround .box-icon i{
+        transition: all 0.2s ease;
+        font-size: 26px;
+       
+    }
+    .portfolio-wrapper .bkround .box-icon i:hover{
+        color: #ff4e01;
+    }
+    .portfolio-wrapper .bkround .box-icon span{
+        font-size: 13px!important;
+        font-weight: 700!important;
+        
+    }
+    .portfolio-wrapper .bkround .box-text h5{
+        font-size: 18px;
+        line-height: 35px;
+        font-weight: 300;
+    }
+    /* ......................................Contact........................................................... */
+    .contact-wrapper{
+        position: relative;
+        background-color: #45678b;
+     
+        border-top:#244762;
+        border-bottom: #244762;
+        border-width: 2px;
+        border-left: transparent;
+        border-right: transparent;
+        border-style: solid;
+        /* border: 5px solid #244762; */
+    }
+    .contact-wrapper .scroll-up{
+        position: absolute;
+        top: -32px;
+        left: 43%;
+    }
+    .contact-wrapper .container{
+        padding-top: 30px!important;
+    }
+    .contact-wrapper h4{
+        position: relative;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 68px;
+        color: #ffffff;
+    }
+    .contact-wrapper h4::after{
+        position:absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    transition: 0.3s;
+    }
+    .contact-wrapper p{
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 24px;
+        color: #ffffff;
+    }
+    .contact-wrapper ul{
+        padding-left: 0!important;
+    }
+    .contact-wrapper  ul li{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #ffffff;
+    }
+    .contact-wrapper span{
+            font-weight: bold;
+    }
+    .contact-wrapper .contact-news{
+        margin-top: 22px;
+    }
+    .contact-wrapper .contact-content{
+        max-width: 220px;
+        margin-top: 22px;
+    }
+    .contact-wrapper .social-links ul{
+        padding-left: 0!important;
+    }
+    .contact-wrapper .social-links ul li{
+        display: inline-block;
+    }
+    .contact-wrapper .contact-news button.btn{
+       background: linear-gradient(#ff8a00,#ff5d00,#ff3500);
+       border-radius: 10px!important;
+       border: transparent;
+       color: #ffffff;
+       cursor: pointer;
+    }
+    .contact-wrapper .contact-news button.btn:hover{
+       color: black; 
+    }
+    .input-group{
+        width: 100%;
+        padding: 5px 3px;
+        background-color: #ffffff;
+    }
+    .form-control{
+        border-radius: 0!important;
+        border: transparent;
+        }
+        /* input[type=text]:focus{
+            border: unset!important;
+        } */
+        .form-control:focus {
+            border: unset!important;
+           box-shadow: unset;
+            }
+            /* .contact-wrapper .contact-news .logo-head h6{
+                font-size: 27px!important;
+                line-height: 27px!important;
+                font-weight: 300px!important;
+                color: #ffffff;
+            } */
+            h6{
+                font-weight: 300!important;
+                color: #ffffff;
+                font-size: 27px!important;
+                line-height: 27px!important;
+            }
+       
+    /* ............................Footer................................................... */
+    footer{
+        background-color: #335875;
+        color: #ffffff;
+        padding-top: 25px;
+        padding-bottom: 13px;
+    }
+    footer p{
+        font-size: 12px;
+    color: #ffffff;
+    font-weight: 300;
+    }
+    footer span{
+        font-size: 14px;
+      font-weight: bold;
+    }
+    footer ul li{
+        display:inline-block; 
+        margin-left: 10px;
+    }
+    footer ul li a{
+        font-size: 12px;
+    color: #ffffff;
+    font-weight: 300;
+    }
+    footer ul li a:hover{
+        color: black;
+    }
+   /* ............................................................................................................. */
+   @media (max-width:991px) {
+    .center-text{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner-wrapper h1{
+       
+        font-size: 51px;
+        line-height: 60px;
+       
+        }
+}
+
+
+@media (max-width:767px) {
+    .banner-wrapper h1{
+       
+        font-size: 48px;
+        line-height: 57px;
+       
+        }
+}
+
+@media (max-width:330px) {
+
+}
